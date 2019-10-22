@@ -1,0 +1,35 @@
+#比较用户群四个季度平均骑行时间
+
+#数据过滤
+x.shape #（行数，列数）
+x.ndim # 维度
+
+#用布尔型数组作为遮罩进行过滤，只保留true的部分
+def get_mean_by_type(,data_arr_list,member_type):
+    for data_arr in data_arr_list:
+        bool_arr = data_arr[:,-1] == member_type
+        filtered arr = data_arr[bool_arr]#实现过滤
+   
+#结果展示
+#1.信息输出
+for idx in range(len(member_mean_duration_list):
+    member_mean_duration = member_mean_duration_list[idx]
+    print(...)
+   
+#2.分析结果保存
+np.array([member_mean_duration_list,member_mean_duration_list])#构建多维数组
+np.savetxt('./men_duration.csv',mean_duration_arr,delimiter=','，comments=‘ ’)#comment设置表头
+
+#3.数据可视化
+plt.figure()
+plt.plot(memeber_mean_duration_list,color='g',linestyle='*',marker='o',label='number')
+plt.title()
+plt.xticks(range(0,4),['1st','2nd',...],rotation)#设置刻度
+plt.xlabel()
+plt.ylabel()
+plt.legend()#位置
+
+plt.savefig('./')# 需要在作图前保存
+plt.show()
+
+
